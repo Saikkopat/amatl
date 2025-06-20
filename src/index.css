@@ -1,0 +1,162 @@
+@import "tailwindcss" layer(base);
+@import "./styles/theme.css";
+@import "./styles/components.css";
+/* 
+
+  Estilos según el Manual de Identidad Gráfica Institucional de la Ciudad de México para el
+  periodo 2024 - 2030.
+
+*/
+
+/* Cabin, para titulos. */
+@font-face {
+  font-family: "Cabin";
+  src: url("../src/assets/fonts/Cabin-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabin";
+  src: url("../src/assets/fonts/Cabin-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabin";
+  src: url("../src/assets/fonts/Cabin-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabin";
+  src: url("../src/assets/fonts/Cabin-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Roboto, para contenidos. */
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@layer {
+  /* Títulos */
+  .titulo-1 {
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: var(--titulo-1-size);
+    line-height: var(--titulo-1-leading);
+  }
+  .titulo-2 {
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: var(--titulo-2-size);
+    line-height: var(--titulo-2-leading);
+  }
+  .titulo-3 {
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    font-size: var(--titulo-3-size);
+    line-height: var(--titulo-3-leading);
+  }
+
+  /* Subtítulos */
+  .subtitulo-1 {
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: var(--subtitulo-1-size);
+    line-height: var(--subtitulo-1-leading);
+  }
+  .subtitulo-2, .subtitulo-3 {
+    font-family: var(--font-titulo);
+    font-weight: 400;
+  }
+  .subtitulo-2 {
+    font-size: var(--subtitulo-2-size);
+    line-height: var(--subtitulo-2-leading);
+  }
+  .subtitulo-3 {
+    font-size: var(--subtitulo-3-size);
+    line-height: var(--subtitulo-3-leading);
+  }
+  .subtitulo-4 {
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: var(--subtitulo-4-size);
+    line-height: var(--subtitulo-4-leading);
+  }
+  .subtitulo-5 {
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    font-size: var(--subtitulo-3-size);
+    line-height: var(--subtitulo-3-leading);
+  }
+
+  /* Cuerpo */
+  .cuerpo-1 {
+    font-family: var(--font-contenido);
+    font-weight: 400;
+    font-size: var(--cuerpo-1-size);
+    line-height: var(--cuerpo-1-leading);
+  }
+  .cuerpo-2 {
+    font-family: var(--font-contenido);
+    font-weight: 400;
+    font-size: var(--cuerpo-2-size);
+    line-height: var(--cuerpo-2-leading);
+  }
+  .cuerpo-3 {
+    font-family: var(--font-contenido);
+    font-weight: 400;
+    font-size: var(--cuerpo-3-size);
+    line-height: var(--cuerpo-3-leading);
+  }
+  .cuerpo-4 {
+    font-family: var(--font-contenido);
+    font-weight: 500;
+    font-size: var(--cuerpo-4-size);
+    line-height: var(--cuerpo-4-leading);
+  }
+  .cuerpo-5 {
+    font-family: var(--font-contenido);
+    font-weight: 400;
+    font-size: var(--cuerpo-4-size);
+    line-height: var(--cuerpo-4-leading);
+  }
+  
+  .espacio-8 { gap: var(--espacio-8); }
+  .espacio-16 { gap: var(--espacio-16); }
+  .espacio-20 { gap: var(--espacio-20); }
+  .espacio-24 { gap: var(--espacio-24); }
+  .espacio-48 { gap: var(--espacio-48); }
+
+  /*  Contorno  */
+  .stroke-1 {
+    outline-width: var(--stroke-1);
+  }
+
+  /*  Sombras  */
+  .sombra {
+    box-shadow: var(--sombra);
+  }
+
+  /*  Border Radius  */
+  .border-radio-0 { border-radius: var(--border-radio-0); }
+  .border-radio-4 { border-radius: var(--border-radio-4); }
+  .border-radio-32 { border-radius: var(--border-radio-32); }
+
+}
+

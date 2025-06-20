@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fuentes */
+  --font-titulo: "Cabin", sans-serif;
+  --font-contenido: "Roboto", sans-serif;
+ /* Títulos */
+  --titulo-1-size: 2rem;       /* 32px */
+  --titulo-1-leading: 2.5rem;  /* 40px */
+  --titulo-2-size: 1.5rem;     /* 24px */
+  --titulo-2-leading: 1.875rem;/* 30px */
+  --titulo-3-size: 0.75rem;    /* 12px */
+  --titulo-3-leading: 1.125rem;/* 18px */
+
+  /* Subtítulos */
+  --subtitulo-1-size: 1rem;      /* 16px */
+  --subtitulo-1-leading: 1.25rem;/* 20px */
+  --subtitulo-2-size: 1.5rem;    /* 24px */
+  --subtitulo-2-leading: 1.875rem;/* 30px */
+  --subtitulo-3-size: 0.625rem;  /* 10px */
+  --subtitulo-3-leading: 0.9375rem;/* 15px */
+  --subtitulo-4-size: 0.5rem;    /* 8px */
+  --subtitulo-4-leading: 0.75rem;/* 12px */
+
+  /* Cuerpo */
+  --cuerpo-1-size: 1.25rem;     /* 20px */
+  --cuerpo-1-leading: 1.875rem; /* 30px */
+  --cuerpo-2-size: 1rem;        /* 16px */
+  --cuerpo-2-leading: 1.5rem;   /* 24px */
+  --cuerpo-3-size: 0.75rem;     /* 12px */
+  --cuerpo-3-leading: 1.25rem;  /* 20px */
+  --cuerpo-4-size: 0.5rem;      /* 8px */
+  --cuerpo-4-leading: 1.125rem; /* 18px */
+
+  /* Colores */
+
+  /* Botones primarios, títulos de párrafos, iconos y fondos. */
+  --guinda-100: #9d2148;
+  
+  /* Botones secundarios, títulos de párrafos e iconos. */
+  --dorado-100: #b28e5c;
+  
+  /* Fondos para banners, cards. */
+  --marfil: #fffae9;
+  
+  /* Botones y fondos de componentes en estado inactivo. */
+  --guinda-50: #38b5b2;
+  
+  /* Botones y fondos de componentes en estado inactivo. */
+  --dorado-50: #e5b738;
+  
+  /* Cuerpo de texto */
+  --gris-100: #55585a;
+  
+  /* Cuerpo de texto con menos jerarquía visual. */
+  --gris-80: #81878b;
+  
+  /* Cuerpo de texto con mucho menos jerarquía visual. */
+  --gris-60: #b0b0b0;
+  
+  /* Sombras, estado inactivo de botón. */
+  --gris-40: #d1d1d1;
+  
+  /* Fondos de pop up. */
+  --gris:20: #f4f0fe;
+  
+  /* Fondos de cards y pop up. */
+  --gris-10: #f9f9f9:
+  
+  /* Textos en fondo guinda-100, fondo de banners. */
+  --blanco: #000;
+  
+  /* Botones, barras de proceso, etc. que busquen enfatizar estado crítico para una acción o proceso. */
+  --rojo-100: #e5074c;
+  
+  /* Botones, barras de proceso, etc. que busquen enfatizar estado crítico inactivo para una acción o proceso. */
+  --rojo-50: #e5074c;
+  
+  /* Botones, barras de proceso, etc. que busquen enfatizar que una acción se ha realizado correctamente. */
+  --verde-100: #e5074c;
+  
+  /* Botones, barras de proceso, etc. que busquen enfatizar una acción correcta pero inactiva o que aún no concluye. */
+  --verde-50: #e5074c;
+  
+  /* Botones, barras de proceso, etc. que busquen enfatizar estado de alerta para una acción o proceso. */
+  --amarillo-100: #fdc60a;
+  
+  /* Botones, barras de proceso, etc. que busquen enfatizar estado de alerta inactivo para una acción o proceso.
+  Color erroneo en el manual. */
+  --amarillo-50: #fffde7; 
+
+  /*  Espaciado (en REM basado en 1REM = 16px)  */
+  --espacio-8: 0.5rem;    /* 8px */
+  --espacio-16: 1rem;     /* 16px */
+  --espacio-20: 1.25rem;  /* 20px */
+  --espacio-24: 1.5rem;   /* 24px */
+  --espacio-48: 3rem;     /* 48px */
+
+  /*  Contorno (Stroke)  */
+  --stroke-1: 1px;        /* Grosor del contorno */
+  --corner-1: 1px;        /* Radio de esquina para contorno */
+
+  /*  Sombras  */
+  --sombra-x: 0;
+  --sombra-y: 4px;
+  --sombra-blur: 8px;
+  --sombra-color: rgb(0 0 0 / 0.1);
+  --sombra: var(--sombra-x) var(--sombra-y) var(--sombra-blur) var(--sombra-color);
+
+  /*  Border Radius */
+  --border-radio-0: 0px;
+  --border-radio-4: 0.25rem;  /* 4px */
+  --border-radio-32: 2rem;    /* 32px */
+
+}

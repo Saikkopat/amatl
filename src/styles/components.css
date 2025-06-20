@@ -1,0 +1,63 @@
+@layer components {
+  /* Clase base para todos los botones */
+  .btn {
+    @apply transition-all duration-200 focus:outline-none flex items-center justify-center;
+    @apply rounded-[var(--border-radio-4)];
+    @apply font-[var(--font-titulo)];
+  }
+
+  /* Variante Primaria (Guinda) */
+  .btn-primary {
+    @apply bg-[var(--guinda-100)] text-[var(--blanco)];
+    &:hover {
+      @apply brightness-95; /* Efecto hover más claro */
+    }
+    &:active {
+      @apply brightness-90; /* Efecto active más marcado */
+    }
+    &.btn-disabled {
+      @apply bg-[var(--guinda-50)] brightness-100;
+    }
+  }
+
+  /* Variante Secundaria (Dorado) */
+  .btn-secondary {
+    @apply bg-[var(--dorado-100)] text-[var(--gris-100)];
+    &:hover {
+      @apply brightness-95;
+    }
+    &:active {
+      @apply brightness-90;
+    }
+    &.btn-disabled {
+      @apply bg-[var(--dorado-50)] brightness-100;
+    }
+  }
+
+  /* Variante Terciaria (Borde) */
+  .btn-tertiary {
+    @apply border border-[var(--gris-40)] text-[var(--gris-100)] bg-transparent;
+    &:hover {
+      @apply bg-[var(--gris-10)];
+    }
+    &.btn-disabled {
+      @apply opacity-50 border-[var(--gris-60)];
+    }
+  }
+
+  /* Tamaños */
+  .btn-small {
+    @apply py-[var(--espacio-8)] px-[var(--espacio-16)] text-sm;
+  }
+  .btn-medium {
+    @apply py-[var(--espacio-16)] px-[var(--espacio-24)] text-base;
+  }
+  .btn-large {
+    @apply py-[var(--espacio-24)] px-[var(--espacio-48)] text-lg;
+  }
+
+  /* Estado deshabilitado */
+  .btn-disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+}

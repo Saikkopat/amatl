@@ -3,6 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "style": "./src/index.css",
+  "exports": {
+    ".": {
+      "import": "./src/components/index.js",
+      "style": "./src/index.css"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
