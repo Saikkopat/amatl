@@ -1,4 +1,3 @@
-@import "tailwindcss" layer(base);
 @import "./styles/theme.css";
 @import "./styles/components.css";
 /* 
@@ -51,6 +50,22 @@
   font-weight: 500;
   font-style: normal;
 }
+
+/*  
+
+  Elementos esteticos no cubiertos por otros elementos.
+
+*/
+
+footer {
+  border-top: 0.5em solid var(--dorado-100);
+}
+
+/* 
+
+  Capa de titulos y utilidades.
+
+*/
 
 @layer {
   /* Títulos */
@@ -159,4 +174,5 @@
   .border-radio-32 { border-radius: var(--border-radio-32); }
 
 }
+
 

@@ -6,39 +6,33 @@
     @apply font-[var(--font-titulo)];
   }
 
-  /* Variante Primaria (Guinda) */
-  .btn-primary {
-    @apply bg-[var(--guinda-100)] text-[var(--blanco)];
+  /* Variante Primario (Guinda) */
+  .btn-primario {
+    @apply bg-[var(--guinda-100)] text-[var(--marfil)];
     &:hover {
-      @apply brightness-95; /* Efecto hover más claro */
-    }
-    &:active {
-      @apply brightness-90; /* Efecto active más marcado */
+      @apply bg-[var(--rojo-50)] text-[var(--rojo-100)]; /* Efecto hover más claro */
     }
     &.btn-disabled {
       @apply bg-[var(--guinda-50)] brightness-100;
     }
   }
 
-  /* Variante Secundaria (Dorado) */
-  .btn-secondary {
-    @apply bg-[var(--dorado-100)] text-[var(--gris-100)];
+  /* Variante Secundario (Dorado) */
+  .btn-secundario {
+    @apply bg-[var(--amarillo-50)] text-[var(--gris-100)]  border border-solid border-[var(--dorado-100)];
     &:hover {
-      @apply brightness-95;
-    }
-    &:active {
-      @apply brightness-90;
+      @apply bg-[var(--gris-40)];
     }
     &.btn-disabled {
       @apply bg-[var(--dorado-50)] brightness-100;
     }
   }
 
-  /* Variante Terciaria (Borde) */
-  .btn-tertiary {
+  /* Variante Terciario (Borde) */
+  .btn-terciario {
     @apply border border-[var(--gris-40)] text-[var(--gris-100)] bg-transparent;
     &:hover {
-      @apply bg-[var(--gris-10)];
+      @apply bg-[var(--gris-10)] shadow;
     }
     &.btn-disabled {
       @apply opacity-50 border-[var(--gris-60)];

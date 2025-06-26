@@ -16,8 +16,8 @@
 defineProps({
   variant: {
     type: String,
-    default: 'primary',
-    validator: (v) => ['primary', 'secondary', 'tertiary'].includes(v)
+    default: 'primario',
+    validator: (v) => ['primario', 'secundario', 'terciario'].includes(v)
   },
   size: {
     type: String,
