@@ -7,6 +7,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Pagina Principal',
     component: () => import('@/views/PaginaPrincipal.vue')
   },
+  {
+    path: '/Boceto',
+    name: 'Boceto',
+    component: () => import('@/views/BocetoAgenda.vue')
+  },
 ];
 
 const router = createRouter({

@@ -1,6 +1,7 @@
 <template>
-  <footer class="py-4 bg-[var(--guinda-100)] px-6">
+  <footer class="py-4 bg-[var(--guinda-100)] text-[var(--marfil)] px-6">
     <div class="contenedor mx-auto">
+      <!-- Logo de la CDMX e iconos de redes sociales. -->
       <div class="grid grid-cols-2">
         <div>
           <img
@@ -24,7 +25,25 @@
           </a>
         </div>
       </div>
-      div.grid.md:grid-cols-
+      <!-- Enlaces a portales de atencion ciudadana, transparencia y opcional 1 -->
+      <div class="grid md:grid-cols-5 py-5">
+        <div class="cuerpo-2">Enlace 1</div>
+        <div class="cuerpo-2">Enlace 2</div>
+        <div class="cuerpo-2">Enlace 3</div>
+      </div>
+      <!-- Direcciones, por defecto viene incluido la de Atencion Ciudadana. -->
+       <div class="pt-3 cuerpo-3">
+        Atención Ciudadana, Dr. Lavista 144, Colonia Doctores, Alcaldía Cuauhtémoc, C.P. 06720.
+       </div>
+       <div class="pb-3 cuerpo-3">
+        Dependencia 2, Dirección 2.
+       </div>
+       <!-- Politica de privacidad y terminos y condiciones -->
+       <div class="grid grid-cols-4 cuerpo-3">
+        <div>Politica de privacidad</div>
+        <div>Terminos y condiciones</div>
+        <div>SAPCI/CTGIETyE 2025 <span class="italic">amatl</span> v.0.1.0</div>
+       </div>
     </div>
   </footer>
 </template>
