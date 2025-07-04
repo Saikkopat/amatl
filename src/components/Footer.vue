@@ -42,8 +42,8 @@
        <div class="grid grid-cols-4 cuerpo-3">
         <div>Politica de privacidad</div>
         <div>Terminos y condiciones</div>
-        <div>SAPCI/CTGIETyE 2025 <span class="italic">amatl</span> v.0.1.0</div>
        </div>
+       <div class="mt-2 cuerpo-3">SAPCI/CTGIETyE 2025 <span class="italic">amatl</span> v.0.1.0</div>
     </div>
   </footer>
 </template>
