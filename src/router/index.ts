@@ -8,6 +8,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/PaginaPrincipal.vue')
   },
   {
+    path: '/inicioSesion',
+    name: 'Inicio de sesion',
+    component: () => import('@/views/InicioSesion.vue')
+  },
+  {
     path: '/Boceto',
     name: 'Boceto',
     component: () => import('@/views/BocetoAgenda.vue')

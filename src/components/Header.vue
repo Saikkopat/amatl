@@ -21,8 +21,11 @@
         </div>
         
         <!-- Links de la dependencia - Solo visible en desktop -->
-        <div class="hidden md:flex items-center">
-          <span class="subtitulo-1 text-[var(--gris-100)]">Transparencia</span>
+        <div class="hidden md:flex justify-around items-center">
+          <span class="subtitulo-1 text-[var(--gris-100)]">Inicio</span>
+          <span class="subtitulo-1 text-[var(--gris-100)]">Recursos</span>
+          <span class="subtitulo-1 text-[var(--gris-100)]">Reportes</span>
+          <span class="subtitulo-1 text-[var(--gris-100)]">Perfil</span>
         </div>
         
         <!-- Menu hamburguesa - Ocupa columna 4 -->

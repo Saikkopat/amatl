@@ -8,8 +8,8 @@ import Footer from "../components/Footer.vue";
   
   <div class="bg-gray-900 h-100">
     <router-link to="/Boceto">
-  <Boton variant="primario" size="large">Botón Primario</Boton>
-</router-link>
+      <Boton variant="primario" size="large">Botón Primario</Boton>
+    </router-link>
     <Boton variant="secundario" size="medium">Botón Secundario</Boton>
     <Boton variant="terciario" size="small">Botón Terciario</Boton>
     <Boton variant="terciario" size="small" disabled>Botón Inactivo</Boton>
