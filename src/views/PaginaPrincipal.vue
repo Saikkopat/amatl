@@ -1,24 +1,29 @@
 <script setup>
-import Boton from "../components/Boton.vue";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import Card from "../components/Card.vue";
 </script>
 <template>
-  <Header />
-  
-  <div class="bg-gray-900 h-100">
-    <router-link to="/Boceto">
-      <Boton variant="primario" size="large">Botón Primario</Boton>
-    </router-link>
-    <Boton variant="secundario" size="medium">Botón Secundario</Boton>
-    <Boton variant="terciario" size="small">Botón Terciario</Boton>
-    <Boton variant="terciario" size="small" disabled>Botón Inactivo</Boton>
+  <Header variant="normal" />
 
-    <div class="text-red-400 titulo-1">
-      This is Cabin and not blue!
-      <p class="text-blue-100">This should be Roboto.</p>
+  <main class="mx-auto px-4 py-8 w-full max-w-7xl">
+    <!-- Título -->
+    <h1
+      class="text-center text-3xl md:text-4xl font-bold text-[var(--guinda-100)] mb-8 md:mb-12"
+    >
+      ¡Bienvenido al portal de reportes!
+    </h1>
+
+    <!-- Contenedor de Cards - versión mejorada -->
+    <div class="flex flex-col md:flex-row justify-center gap-6 w-full">
+      <div class="w-full md:w-auto md:min-w-[400px]">
+        <Card />
+      </div>
+      <div class="w-full md:w-auto md:min-w-[400px]">
+        <Card />
+      </div>
     </div>
-  </div>
+  </main>
 
   <Footer />
 </template>

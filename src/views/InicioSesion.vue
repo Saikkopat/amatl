@@ -4,8 +4,8 @@ import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 </script>
 <template>
-  <Header />
-  <div class="container mx-auto h-120 flex items-center justify-center text-[var(--gris-100)]">
+  <Header variant="titulo"/>
+  <div class="container px-5 mx-auto h-120 flex items-center justify-center text-[var(--gris-100)]">
     <div
       class="card container bg-[var(--marfil)] text-center p-6 rounded-lg shadow-md max-w-md"
     >
