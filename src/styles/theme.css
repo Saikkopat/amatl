@@ -36,61 +36,61 @@
   /* Colores */
 
   /* Botones primarios, títulos de párrafos, iconos y fondos. */
-  --guinda-100: #9d2148;
+  --color-guinda-100: #9d2148;
   
   /* Botones secundarios, títulos de párrafos e iconos. */
-  --dorado-100: #b28e5c;
+  --color-dorado-100: #b28e5c;
   
   /* Fondos para banners, cards. */
-  --marfil: #fffae9;
+  --color-marfil: #fffae9;
   
   /* Botones y fondos de componentes en estado inactivo. */
-  --guinda-50: #38b5b2;
+  --color-guinda-50: #38b5b2;
   
   /* Botones y fondos de componentes en estado inactivo. */
-  --dorado-50: #e5b738;
+  --color-dorado-50: #e5b738;
   
   /* Cuerpo de texto */
-  --gris-100: #55585a;
+  --color-gris-100: #55585a;
   
   /* Cuerpo de texto con menos jerarquía visual. */
-  --gris-80: #81878b;
+  --color-gris-80: #81878b;
   
   /* Cuerpo de texto con mucho menos jerarquía visual. */
-  --gris-60: #b0b0b0;
+  --color-gris-60: #b0b0b0;
   
   /* Sombras, estado inactivo de botón. */
-  --gris-40: #d1d1d1;
+  --color-gris-40: #d1d1d1;
   
   /* Fondos de pop up. */
-  --gris-20: #f4f0fe;
+  --color-gris-20: #f4f0fe;
   
   /* Fondos de cards y pop up. */
-  --gris-10: #f9f9f9:
+  --color-gris-10: #f9f9f9;
   
   /* Textos en fondo guinda-100, fondo de banners. */
-  --blanco: #fff;
+  --color-blanco: #fff;
     
   /* Botones, barras de proceso, etc. que busquen enfatizar estado crítico para una acción o proceso. */
-  --rojo-100: #e5074c;
+  --color-rojo-100: #e5074c;
 
   /* Botones, barras de proceso, etc. que busquen enfatizar estado crítico inactivo para una acción o proceso. */
-  --rojo-50: #f8b3c9;
+  --color-rojo-50: #f8b3c9;
 
   /* Botones, barras de proceso, etc. que busquen enfatizar que una acción se ha realizado correctamente. */
-  --verde-100: #027a35;
+  --color-verde-100: #027a35;
 
   /* Botones, barras de proceso, etc. que busquen enfatizar una acción correcta pero inactiva o que aún no concluye. */
-  --verde-50: #b8e6cb;
+  --color-verde-50: #b8e6cb;
 
   /* Botones, barras de proceso, etc. que busquen enfatizar estado de alerta para una acción o proceso. */
-  --amarillo-100: #fdc60a;
+  --color-amarillo-100: #fdc60a;
 
   /* Botones, barras de proceso, etc. que busquen enfatizar estado de alerta inactivo para una acción o proceso. */
-  --amarillo-50: #fffde7;
+  --color-amarillo-50: #fffde7;
 
   /* Textos en fondo guinda-100, fondo de banners. */
-  --blanco: #fff;
+  --color-blanco: #fff;
 
   /*  Espaciado (en REM basado en 1REM = 16px)  */
   --espacio-8: 0.5rem;    /* 8px */

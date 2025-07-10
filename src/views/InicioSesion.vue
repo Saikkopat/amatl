@@ -5,16 +5,16 @@ import Footer from "../components/Footer.vue";
 </script>
 <template>
   <Header variant="titulo"/>
-  <div class="container px-5 mx-auto h-120 flex items-center justify-center text-[var(--gris-100)]">
+  <div class="container px-5 mx-auto h-120 flex items-center justify-center text-gris-100">
     <div
-      class="card container bg-[var(--marfil)] text-center p-6 rounded-lg shadow-md max-w-md"
+      class="card container bg-marfil text-center p-6 rounded-lg shadow-md max-w-md"
     >
       <h1 class="titulo-1 mb-6">Inicio de sesión</h1>
 
       <form class="cuerpo-1 mx-auto space-y-4">
         <div class="space-y-2">
           <label
-            class="cuerpo-2 text-[var(--guinda-100)] block text-left mb-1"
+            class="cuerpo-2 text-guinda-100 block text-left mb-1"
             for="user"
             >Usuario</label
           >
@@ -29,7 +29,7 @@ import Footer from "../components/Footer.vue";
 
         <div class="space-y-2">
           <label
-            class="cuerpo-2 text-[var(--guinda-100)] block text-left mb-1"
+            class="cuerpo-2 text-guinda-100 block text-left mb-1"
             for="pass"
             >Contraseña</label
           >

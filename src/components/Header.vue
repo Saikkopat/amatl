@@ -19,7 +19,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header class="py-1 bg-[var(--marfil)] text-[var(--gris-100)] px-6">
+  <header class="py-1 bg-marfil text-gris-100 px-6">
     <div v-if="variant === 'normal'" class="container mx-auto">
       <div class="grid grid-cols-4 gap-4">
         <!-- Menú Hamburguesa - Ocupa columna 1 -->
@@ -30,11 +30,11 @@ const toggleMenu = () => {
             aria-label="Menú"
           >
             <div class="w-6 flex flex-col space-y-1.5">
-              <span class="h-0.5 w-full bg-[var(--gris-100)] transition-all duration-300 group-hover:bg-[var(--guinda-100)]"
+              <span class="h-0.5 w-full bg-gris-100 transition-all duration-300 group-hover:bg-guinda-100"
                 :class="{'transform rotate-45 translate-y-2': isMenuOpen}"></span>
-              <span class="h-0.5 w-full bg-[var(--gris-100)] transition-all duration-300 group-hover:bg-[var(--guinda-100)]"
+              <span class="h-0.5 w-full bg-gris-100 transition-all duration-300 group-hover:bg-guinda-100"
                 :class="{'opacity-0': isMenuOpen}"></span>
-              <span class="h-0.5 w-full bg-[var(--gris-100)] transition-all duration-300 group-hover:bg-[var(--guinda-100)]"
+              <span class="h-0.5 w-full bg-gris-100 transition-all duration-300 group-hover:bg-guinda-100"
                 :class="{'transform -rotate-45 -translate-y-2': isMenuOpen}"></span>
             </div>
           </button>
@@ -52,11 +52,11 @@ const toggleMenu = () => {
           <transition name="slide">
             <div 
               v-if="isMenuOpen"
-              class="fixed inset-y-0 left-0 z-50 bg-[var(--marfil)] w-4/5 max-w-sm shadow-2xl"
+              class="fixed inset-y-0 left-0 z-50 bg-marfil w-4/5 max-w-sm shadow-2xl"
             >
               <div class="h-full flex flex-col">
                 <!-- Cabecera del menú móvil -->
-                <div class="p-4 flex justify-between items-center border-b border-[var(--gris-30)]">
+                <div class="p-4 flex justify-between items-center border-b border-gris-30">
                   <img
                     src="../assets/icons/logo-sapci-cdmx-horizontal.svg"
                     alt="CDMX"
@@ -64,7 +64,7 @@ const toggleMenu = () => {
                   />
                   <button 
                     @click="toggleMenu"
-                    class="text-[var(--gris-100)] text-2xl transition-all duration-200 hover:text-[var(--guinda-100)] hover:scale-110"
+                    class="text-gris-100 text-2xl transition-all duration-200 hover:text-[var(--guinda-100)] hover:scale-110"
                   >
                     ✕
                   </button>
@@ -89,8 +89,8 @@ const toggleMenu = () => {
                       >
                         <a 
                           href="#"
-                          class="subtitulo-1 text-[var(--gris-100)] block py-3 px-4 rounded-lg transition-all duration-300
-                                 hover:bg-[var(--guinda-100)] hover:text-white hover:pl-6"
+                          class="subtitulo-1 text-gris-100 block py-3 px-4 rounded-lg transition-all duration-300
+                                 hover:bg-guinda-100 hover:text-white hover:pl-6"
                         >
                           {{ item }}
                         </a>
@@ -100,7 +100,7 @@ const toggleMenu = () => {
                 </nav>
                 
                 <!-- Footer del menú móvil -->
-                <div class="p-4 border-t border-[var(--gris-30)]">
+                <div class="p-4 border-t border-gris-30">
                   <img
                     src="../assets/icons/Glifo.svg"
                     alt="CDMX"
@@ -126,8 +126,8 @@ const toggleMenu = () => {
             v-for="item in menuItems" 
             :key="item"
             href="#"
-            class="subtitulo-1 text-[var(--gris-100)] px-3 py-1 rounded-lg transition-colors duration-200
-                   hover:bg-[var(--guinda-100)] hover:text-white"
+            class="subtitulo-1 text-gris-100 px-3 py-1 rounded-lg transition-colors duration-200
+                   hover:bg-guinda-100 hover:text-white"
           >
             {{ item }}
           </a>

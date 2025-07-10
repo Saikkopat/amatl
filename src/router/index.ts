@@ -13,6 +13,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/InicioSesion.vue')
   },
   {
+    path: '/AuxilioEscolar/Llegada',
+    name: 'Inicio de sesion',
+    component: () => import('@/views/AuxilioEscolar/Llegada.vue')
+  },
+  {
     path: '/Boceto',
     name: 'Boceto',
     component: () => import('@/views/BocetoAgenda.vue')
