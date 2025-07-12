@@ -3,6 +3,7 @@ import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import Card from "../components/Card.vue";
 import Boton from "../components/Boton.vue";
+import Mapa from "./Mapa.vue";
 </script>
 <template>
   <Header variant="normal" />
@@ -28,6 +29,9 @@ import Boton from "../components/Boton.vue";
     <router-link to="/AuxilioEscolar/Llegada">
       <Boton variant="primario" size="large" class="w-full">Ir a Llegada</Boton>
     </router-link>
+
+    <Mapa />
+
   </main>
 
   <Footer />
