@@ -4,21 +4,21 @@ import type {RouteRecordRaw} from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Pagina Principal',
+    name: 'PaginaPrincipal', // Mejor sin espacios
     component: () => import('@/views/PaginaPrincipal.vue')
   },
   {
-    path: '/inicioSesion',
-    name: 'Inicio de sesion',
+    path: '/inicio-sesion', // Mejor con guión en lugar de camelCase
+    name: 'InicioSesion', // Nombre único y sin espacios
     component: () => import('@/views/InicioSesion.vue')
   },
   {
-    path: '/AuxilioEscolar/Llegada',
-    name: 'Inicio de sesion',
-    component: () => import('@/views/AuxilioEscolar/Llegada.vue')
+    path: '/auxilio-escolar/llegada', // todo en minúsculas
+    name: 'AuxilioEscolarLlegada', // Nombre único
+    component: () => import('@/views/AuxilioEscolar/Llegada.vue') // Asegurar mayúscula correcta
   },
   {
-    path: '/Boceto',
+    path: '/boceto',
     name: 'Boceto',
     component: () => import('@/views/BocetoAgenda.vue')
   },

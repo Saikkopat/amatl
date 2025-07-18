@@ -1,7 +1,14 @@
 <script setup>
 import Header from "../../components/Header.vue";
 import Footer from "../../components/Footer.vue";
+import { Field } from 'vee-validate';
+
+const options = [
+  { label: 'Sí', value: 'yes' },
+  { label: 'No', value: 'no' }
+];
 </script>
+
 <template>
   <Header variant="normal" />
 
@@ -17,12 +24,27 @@ import Footer from "../../components/Footer.vue";
     >
       <div class="p-2 titulo-2">
         <div class="border-radio-4 p-3">
-          <FormKit
-            type="radio"
-            name="confirmacion"
-            label="¿Tu escuela tiene clases?"
-            :options="['Sí', 'No']"
-          />
+          <label class="block mb-2">¿Tu escuela tiene clases?</label>
+          <div class="space-y-2">
+            <Field
+              v-for="option in options"
+              :key="option.value"
+              name="confirmacion"
+              type="radio"
+              :value="option.value"
+              v-slot="{ field }"
+              class="mr-2"
+            >
+              <label class="inline-flex items-center">
+                <input
+                  v-bind="field"
+                  type="radio"
+                  class="form-radio text-guinda-100 focus:ring-guinda-100"
+                >
+                <span class="ml-2">{{ option.label }}</span>
+              </label>
+            </Field>
+          </div>
         </div>
       </div>
     </div>
