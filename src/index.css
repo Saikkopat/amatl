@@ -81,7 +81,7 @@ footer {
   }
   .titulo-2 {
     font-family: var(--font-titulo);
-    font-weight: 700;
+    font-weight: 600;
     font-size: var(--titulo-2-size);
     line-height: var(--titulo-2-leading);
   }

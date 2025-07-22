@@ -17,6 +17,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'AuxilioEscolarLlegada', // Nombre único
     component: () => import('@/views/AuxilioEscolar/Llegada.vue') // Asegurar mayúscula correcta
   },
+
+  {
+    path: '/auxilio-escolar/termino', // todo en minúsculas
+    name: 'AuxilioEscolarTermino', // Nombre único
+    component: () => import('@/views/AuxilioEscolar/Termino.vue') // Asegurar mayúscula correcta
+  },
   {
     path: '/boceto',
     name: 'Boceto',

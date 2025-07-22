@@ -1,6 +1,7 @@
 <script setup>
-import Header from "../../components/Header.vue";
-import Footer from "../../components/Footer.vue";
+import Header from '@/components/Header.vue';
+import Footer from "@/components/Footer.vue";
+import GeoLocalizacion from "@/components/GeoLocalizacion.vue";
 import { Field } from 'vee-validate';
 
 const options = [
@@ -10,45 +11,60 @@ const options = [
 </script>
 
 <template>
-  <Header variant="normal" />
+  <div class="min-h-screen flex flex-col">
+    <Header variant="normal" />
+    
+    <main class="flex-grow container mx-auto px-4 max-w-2xl py-8">
+      <div class="text-center mb-8 md:mb-12">
+        <h1 class="titulo-1 text-guinda-100 mb-4">
+          Llegada
+        </h1>
+        <p class="cuerpo-2 text-gris-80">Por favor registra tu llegada.</p>
+      </div>
 
-  <main class="container grid grid-cols-12 gap-x-4 mx-auto px-4">
-    <h1
-      class="text-center col-span-12 titulo-1 font-bold text-guinda-100 my-8 md:my-12"
-    >
-      Llegada
-    </h1>
-
-    <div
-      class="text-gris-100 col-span-12 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4 bg-marfil border-radio-4"
-    >
-      <div class="p-2 titulo-2">
-        <div class="border-radio-4 p-3">
-          <label class="block mb-2">¿Tu escuela tiene clases?</label>
-          <div class="space-y-2">
-            <Field
-              v-for="option in options"
-              :key="option.value"
-              name="confirmacion"
-              type="radio"
-              :value="option.value"
-              v-slot="{ field }"
-              class="mr-2"
-            >
-              <label class="inline-flex items-center">
+      <div class="bg-marfil border-radio-4 sombra p-6 mb-8">
+        <h2 class="titulo-2 text-gris-100 mb-6">
+          ¿Tu escuela tuvo clases?
+        </h2>
+        
+        <div class="space-y-4 mb-8">
+          <Field
+            v-for="option in options"
+            :key="option.value"
+            name="confirmacion"
+            type="radio"
+            :value="option.value"
+            v-slot="{ field }"
+          >
+            <div class="bg-white border-radio-4 p-4 hover:bg-gris-10 transition-colors">
+              <label class="flex items-center espacio-8 cursor-pointer">
                 <input
                   v-bind="field"
                   type="radio"
-                  class="form-radio text-guinda-100 focus:ring-guinda-100"
-                >
-                <span class="ml-2">{{ option.label }}</span>
+                  class="form-radio h-5 w-5 text-guinda-100 focus:ring-guinda-100 border-2"
+                />
+                <span class="cuerpo-2 text-gris-100">{{ option.label }}</span>
               </label>
-            </Field>
-          </div>
+            </div>
+          </Field>
+        </div>
+
+        <div class="bg-marfil border-radio-4 sombra p-6 mb-8">
+        <h2 class="subtitulo-1 text-gris-100 mb-6">Ubicación Actual</h2>
+        <GeoLocalizacion @coords-updated="handleCoords" />
+        </div>
+        
+        <div class="text-center mt-8">
+          <button
+            type="submit"
+            class="btn btn-primario btn-medium mx-auto bg-guinda-100 text-gris-20"
+          >
+            Confirmar Registro
+          </button>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <Footer />
+    <Footer />
+  </div>
 </template>
