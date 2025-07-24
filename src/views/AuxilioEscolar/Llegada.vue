@@ -1,6 +1,7 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import Footer from "@/components/Footer.vue";
+import Boton from "@/components/Boton.vue";
 import GeoLocalizacion from "@/components/GeoLocalizacion.vue";
 import { Field } from 'vee-validate';
 
@@ -55,12 +56,9 @@ const options = [
         </div>
         
         <div class="text-center mt-8">
-          <button
-            type="submit"
-            class="btn btn-primario btn-medium mx-auto bg-guinda-100 text-gris-20"
-          >
+          <Boton variante="primario" tamano="grande" @click="confirmar">
             Confirmar Registro
-          </button>
+          </Boton>
         </div>
       </div>
     </main>

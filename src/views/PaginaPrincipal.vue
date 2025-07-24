@@ -5,34 +5,90 @@ import Card from "../components/Card.vue";
 import Boton from "../components/Boton.vue";
 import Mapa from "./Mapa.vue";
 </script>
+
 <template>
-  <Header variant="normal" />
+  <Header variante="normal" />
 
-  <main class="mx-auto px-4 py-8 w-full max-w-7xl">
-    <!-- Título -->
-    <h1
-      class="text-center text-3xl md:text-4xl font-bold text-[var(--guinda-100)] mb-8 md:mb-12"
+  <div class="min-h-screen flex flex-col">
+    <main
+      class="flex-grow mx-auto px-[var(--espacio-16)] py-[var(--espacio-24)] w-full max-w-7xl space-y-[var(--espacio-24)]"
     >
-      ¡Bienvenido al portal de reportes!
-    </h1>
+      <!-- Título principal -->
+      <h1
+        class="text-center titulo-1 mb-[var(--espacio-24)] text-guinda-100"
+      >
+        ¡Bienvenido al portal de reportes!
+      </h1>
 
-    <!-- Contenedor de Cards - versión mejorada -->
-    <div class="flex flex-col md:flex-row justify-center gap-6 w-full">
-      <div class="w-full md:w-auto md:min-w-[400px]">
-        <Card />
+      <!-- Sección de tarjetas -->
+      <section class="space-y-[var(--espacio-24)]">
+        <h2
+          class="text-[var(--titulo-2-size)] leading-[var(--titulo-2-leading)] font-[var(--font-titulo)] text-center"
+        >
+          Nuestros programas sociales
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[var(--espacio-24)]">
+          <Card>
+            <template #titulo>Programa de Alimentación Escolar</template>
+            <template #descripcion>
+              Apoyo nutricional para estudiantes de educación básica en
+              situación vulnerable.
+            </template>
+            <template #boton>Más información</template>
+          </Card>
+
+          <Card>
+            <template #titulo>Becas Educativas</template>
+            <template #descripcion>
+              Apoyo económico para continuar estudios de nivel medio superior y
+              superior.
+            </template>
+            <template #boton>Convocatorias</template>
+          </Card>
+        </div>
+      </section>
+
+      <!-- CTA Principal -->
+       <p class="titulo-2 text-center text-dorado-100">Auxilio Escolar</p>
+      <div class="bg-marfil p-3 shadow">
+        <div class="text-center mb-5">
+        <router-link to="/auxilio-escolar/llegada">
+          <Boton
+            variante="primario"
+            tamano="grande"
+            class="w-full md:w-auto px-[var(--espacio-48)]"
+          >
+            Auxilio Escolar: Llegada
+          </Boton>
+        </router-link>
       </div>
-      <div class="w-full md:w-auto md:min-w-[400px]">
-        <Card />
+
+      <div class="text-center">
+        <router-link to="/auxilio-escolar/termino">
+          <Boton
+            variante="primario"
+            tamano="grande"
+            class="w-full md:w-auto px-[var(--espacio-48)]"
+          >
+            Auxilio Escolar: Término
+          </Boton>
+        </router-link>
       </div>
-    </div>
+      </div>
 
-    <router-link to="/AuxilioEscolar/Llegada">
-      <Boton variant="primario" size="large" class="w-full">Ir a Llegada</Boton>
-    </router-link>
-
-    <Mapa />
-
-  </main>
-
-  <Footer />
+      <!-- Mapa interactivo -->
+      <section class="mb-8 py-5">
+        <p
+          class="text-center titulo-2 text-dorado-100 mb-3"
+        >
+          Colonias de la Ciudad de México
+      </p>
+        <Mapa
+          class="rounded-[var(--border-radio-4)] border border-gris-20 shadow-md"
+        />
+      </section>
+    </main>
+  </div>
+  <Footer class="mt-auto" />
 </template>
