@@ -50,7 +50,7 @@ onMounted(() => {
       zoom: 13
     }),
     controls: defaultControls({
-      zoom: false
+      zoom: true
     }).extend([
       new Zoom({
         className: 'ol-zoom custom-zoom-control',

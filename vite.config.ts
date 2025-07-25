@@ -1,15 +1,14 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
-import path from 'path'
+import { fileURLToPath, URL } from 'node:url' // Usar import.meta.url
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-      '~': path.resolve(__dirname, './public')
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '~': fileURLToPath(new URL('./public', import.meta.url))
     }
   }
 })
